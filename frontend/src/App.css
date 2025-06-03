@@ -1,38 +1,181 @@
-.App {
-  text-align: center;
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
+/* APP.JS DESIGN */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* NAVBAR DESIGN */
+.nav_container{
+  padding:10px 50px;
+  width:100vw;
   display: flex;
-  flex-direction: column;
+  flex:1;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  position: fixed;
+  transition: .5s;
+}
+.home_logo{
+  width:300px;
+  height:100px;
+  object-fit: contain;
+}
+ul{
+  display:flex;
+  flex:1;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+li{
+  list-style: none;
+  padding: 15px;
+}
+.switches_li{
+  text-decoration: none;
+  color:#2461e5;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.switches_dk{
+  text-decoration: none;
+  color:white;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.main_btn{
+  display:flex;
+}
+.sec_btn{
+  margin-left: 30px;
+}
+button{
+  margin: 0 4px;
+  outline: none;
+  border: 2px solid #2461e5;
+  background: #2461e5;
+  border-radius: 4px;
+  width: fit-content;
+  padding: 10px 25px;
+  font-size: 16px;
+  font-weight: 600;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+button:first-child{
+  background: transparent;
+  border: none;
+  color: #2461e5;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bed_time>button{
+  outline:none;
+  border: 2px solid transparent;
+  cursor: pointer;
 }
+
+/* HOME PAGE DESIGN */
+
+.home_container {
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  flex:1;
+  align-items: center;
+  padding: 0 50px;
+  justify-content: space-between;
+  background: white;
+  overflow-x: hidden;
+}
+.home_container .dark{
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  flex:1;
+  align-items: center;
+  padding: 0 50px;
+  justify-content: space-between;
+  background-color: #020817;
+  overflow-x: hidden;
+}
+.write_ups{
+  text-wrap: wrap;
+  max-width:600px;
+}
+.write_ups .writeH{
+  text-transform: capitalize;
+  color: black;
+}
+.write_ups .writeH span{
+  color: #2461e5;
+}
+.write_ups .writeH_dk span{
+  color: #2461e5;
+}
+.writeH_dk{
+  text-transform: capitalize;
+  color: white;
+}
+.write_ups .writeP{
+  font-size: 18px;
+  text-wrap: wrap;
+  color: black;
+}
+.writeP_dk{
+  font-size: 18px;
+  text-wrap: wrap;
+  color: white;
+}
+.img_container{
+  margin-top: 150px;
+}
+.img_container img{
+  max-width:600px;
+}
+.home_btn{
+  margin-top: 10px;
+}
+/* LOGIN FORM SECTION */
+
+.login{
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.login_section{
+  display:flex;
+  flex-direction: column;
+  height: fit-content;
+  width: 40vw;
+}
+.login_section h2{
+  font-size: 30px;
+  font-weight:700;
+  text-align:center;
+  margin-bottom: 50px;
+}
+.login_section form{
+  background: crimson;
+  display: flex;
+  flex-direction: column;
+  padding:20px 40px;
+  align-items: center;
+  justify-content: center;
+}
+.login_section form input{
+  outline:none;
+  max-width:400px;
+  height: 35px;
+  /* background: transparent; */
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+
+
