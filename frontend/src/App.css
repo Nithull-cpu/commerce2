@@ -7,40 +7,36 @@
 /* APP.JS DESIGN */
 
 /* NAVBAR DESIGN */
-.total_nav #light{
-  background: crimson;
-}
-.total_nav #dark{
-  background: #020817;
-}
 .nav_container{
-  padding:10px 50px;
-  width:100vw;
+  width: 100%;
   height: 50px;
   display: flex;
-  flex:1;
-  align-items: center;
-  justify-content: space-between;
   background: white;
   position: fixed;
-  transition: .4s ease-in-out;
-  margin-top: 65px;
-  z-index: 1;
+  margin-top:66px;
+  align-items: center;
+  padding: 0 50px;
   overflow-y: hidden;
+  transition: .4s ease-in-out;
+}
+.min_nav{
+  min-width: 100%;
+  display: flex;
+  padding:0 50px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  background: white;
+  position: fixed;
+  justify-content: right;
+  transition: .4s ease-in-out;
 }
 .nav_container #dark{
   background: #020817;
 }
-
-.min_nav{
-  padding-top: 10px;
-  background: transparent;
-  display: flex;
-  position: fixed;
-  right:0;
-  margin-right: 50px;
-  z-index: 1;
+.min_nav #dark{
+  background: #020817;
 }
+
 .min_nav .lang_btn{
   outline:none;
   border-right: .2em solid #020817;
