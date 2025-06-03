@@ -2,6 +2,7 @@ import '../App.css'
 import React, { useState, useMemo } from 'react'
 import { BrowserRouter, Link } from 'react-router-dom'
 import Logo from '../static_files/Logo.png'
+import USA from '../static_files/USA.png'
 import { MdBedtime } from 'react-icons/md'
 import { FaSun } from 'react-icons/fa'
 
@@ -12,15 +13,19 @@ const NavBar = ({ mode, setMode }) => {
         mode === 'light' ? setMode('dark') : setMode('light');
         console.log('clicked');
     };
-
     
     return (
         <div className='nav_container'>
+
+            <div min_nav>
+                <img src={USA} alt='usa'/>
+            </div>
+
             <Link to="/"><img className='home_logo' src={Logo} alt='logo' /></Link>
 
             <ul>
                 {links.map((link, index) =>
-                    <li key={index}><Link className={mode === 'light' ? 'switches_li' : 'switches_dk'} to={link}> {link} </Link></li>
+                    <li key={index}><Link style={{"textTransform" : "uppercase"}} className={mode === 'light' ? 'switches_li' : 'switches_dk'} to={link}> {link} </Link></li>
                 )}
             </ul>
             <div className='main_btn'>

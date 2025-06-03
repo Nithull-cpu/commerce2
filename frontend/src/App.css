@@ -37,13 +37,15 @@ li{
   text-decoration: none;
   color:#2461e5;
   font-size: 16px;
-  text-transform: uppercase;
+  text-transform: capitalize;
+  font-weight: 600;
 }
 .switches_dk{
   text-decoration: none;
   color:white;
   font-size: 16px;
-  text-transform: uppercase;
+  text-transform: capitalize;
+  font-weight: 600;
 }
 
 .main_btn{
@@ -63,11 +65,13 @@ button{
   font-size: 16px;
   font-weight: 600;
   color: white;
+  text-transform: capitalize;
 }
 button:first-child{
   background: transparent;
   border: none;
   color: #2461e5;
+  text-transform: capitalize;
 }
 
 .bed_time>button{
@@ -80,56 +84,54 @@ button:first-child{
 
 .home_container {
   width: 100vw;
-  height: fit-content;
+  min-height: 100vh;
   display: flex;
   flex:1;
   align-items: center;
   padding: 0 50px;
   justify-content: space-between;
+  overflow-x: hidden;
+  padding-top: 120px;
+}
+#light{
   background: white;
-  overflow-x: hidden;
 }
-.home_container .dark{
-  width: 100vw;
-  height: fit-content;
-  display: flex;
-  flex:1;
-  align-items: center;
-  padding: 0 50px;
-  justify-content: space-between;
-  background-color: #020817;
-  overflow-x: hidden;
+#dark{
+  background: #020817;
 }
+
 .write_ups{
   text-wrap: wrap;
   max-width:600px;
 }
+
 .write_ups .writeH{
   text-transform: capitalize;
-  color: black;
+  color: white;
+  font-size: 60px;
 }
 .write_ups .writeH span{
   color: #2461e5;
+  font-size: 60px;
 }
 .write_ups .writeH_dk span{
   color: #2461e5;
+  font-size: 60px;
 }
 .writeH_dk{
   text-transform: capitalize;
-  color: white;
+  color: black;
+  font-size: 60px;
 }
 .write_ups .writeP{
   font-size: 18px;
   text-wrap: wrap;
-  color: black;
+  color: white;
 }
 .writeP_dk{
   font-size: 18px;
   text-wrap: wrap;
-  color: white;
-}
-.img_container{
-  margin-top: 150px;
+  color: black;
 }
 .img_container img{
   max-width:600px;
@@ -137,6 +139,37 @@ button:first-child{
 .home_btn{
   margin-top: 10px;
 }
+.profile_learners{
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  max-width:320px;
+  margin-top: 20px;
+}
+.profile_display .profile_icon{
+  
+}
+
+.profile_learners .learners .learners_p_light{
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+}
+.profile_learners .learners .learners_p_dark{
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+}
+
+.profile_learners .learners .learners_p_light span{
+  color: #a2a1a0;
+  font-weight: 400;
+}
+.profile_learners .learners .learners_p_dark span{
+  color: #a2a1a0;
+  font-weight: 400;
+}
+
 /* LOGIN FORM SECTION */
 
 .login{
@@ -176,6 +209,7 @@ button:first-child{
   border-radius: 5px;
   margin: 10px 0;
 }
+
 
 
 
