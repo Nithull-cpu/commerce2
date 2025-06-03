@@ -7,16 +7,101 @@
 /* APP.JS DESIGN */
 
 /* NAVBAR DESIGN */
+.total_nav #light{
+  background: crimson;
+}
+.total_nav #dark{
+  background: #020817;
+}
 .nav_container{
   padding:10px 50px;
   width:100vw;
+  height: 50px;
   display: flex;
   flex:1;
   align-items: center;
   justify-content: space-between;
-  background: transparent;
+  background: white;
   position: fixed;
-  transition: .5s;
+  transition: .4s ease-in-out;
+  margin-top: 65px;
+  z-index: 1;
+  overflow-y: hidden;
+}
+.nav_container #dark{
+  background: #020817;
+}
+
+.min_nav{
+  padding-top: 10px;
+  background: transparent;
+  display: flex;
+  position: fixed;
+  right:0;
+  margin-right: 50px;
+  z-index: 1;
+}
+.min_nav .lang_btn{
+  outline:none;
+  border-right: .2em solid #020817;
+  background: none;
+  padding: 0 20px;
+  display: flex;
+}
+.min_nav .lang_btn_dark{
+  outline:none;
+  border-right: .2em solid white;
+  background: none;
+  padding: 0 20px;
+  display: flex;
+}
+.min_nav .link_btn{
+  outline:none;
+  border-right: .2em solid #020817;
+  background: none;
+  padding:0 20px;
+  display: flex;
+  text-decoration: none;
+}
+.min_nav .link_btn_dark{
+  outline:none;
+  border-right: .2em solid white;
+  background: none;
+  padding:0 20px;
+  display: flex;
+  text-decoration: none;
+}
+.min_nav .link_btn p{
+  font-size: 17px;
+  color: #2461e5;
+  text-align: center;
+  margin-left: 5px;
+  text-transform: capitalize;
+  margin-top: 7px;
+}
+.min_nav .link_btn_dark p{
+  font-size: 17px;
+  color: #2461e5;
+  text-align: center;
+  margin-left: 5px;
+  text-transform: capitalize;
+  margin-top: 7px;
+}
+.min_nav .lang_btn p{
+ font-size: 17px;
+  color: #2461e5;
+  text-align: center;
+  margin-left: 5px;
+  text-transform: capitalize;
+  margin-top: 7px; 
+}
+.min_nav .lang_btn_dark p{
+ font-size: 17px;
+  color: #2461e5;
+  text-align: center;
+  margin-left: 5px;
+  text-transform: capitalize;
+  margin-top: 7px; 
 }
 .home_logo{
   width:300px;
@@ -92,6 +177,7 @@ button:first-child{
   justify-content: space-between;
   overflow-x: hidden;
   padding-top: 120px;
+  transition: .4s ease-in-out;
 }
 #light{
   background: white;
@@ -146,9 +232,6 @@ button:first-child{
   max-width:320px;
   margin-top: 20px;
 }
-.profile_display .profile_icon{
-  
-}
 
 .profile_learners .learners .learners_p_light{
   font-size: 16px;
@@ -174,10 +257,12 @@ button:first-child{
 
 .login{
   width: 100vw;
+  min-height:100vh;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  padding: 100px 0;
 }
 
 .login_section{

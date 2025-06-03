@@ -1,10 +1,14 @@
 import '../App.css'
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
+import NavBar from '../components/NavBar'
+import React, {useState} from 'react'
 
 const Login = () => {
-
+    const [mode, setMode] = useState('light');
     return (
-        <div className='login'>
+        <>
+        <NavBar mode={mode} setMode={setMode}/>
+        <div className='login' id={mode}>
             <img />
 
             <div className='login_section'>
@@ -26,6 +30,7 @@ const Login = () => {
                 </form>
             </div>
         </div>
+        </>
     )
 }
 

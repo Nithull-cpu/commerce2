@@ -2,13 +2,14 @@ import '../App.css'
 import React, { useState } from 'react'
 import NavBar from '../components/NavBar'
 import Graduation from '../static_files/Graduation.jpg'
-import { MdAccountCircle } from "react-icons/md";
+import { MdAccountCircle } from "react-icons/md"
 
 const Home = () => {
     const [mode, setMode] = useState('light');
     return (
         <>
             <NavBar mode={mode} setMode={setMode} />
+
             <div className={`home_container`} id={mode}>
 
                 <div className='write_ups'>
@@ -38,6 +39,7 @@ const Home = () => {
                     <img src={Graduation} alt='Graduation' />
                 </div>
             </div>
+            <img src={Graduation} alt='Graduation' />
         </>
     )
 }
