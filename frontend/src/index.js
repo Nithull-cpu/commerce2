@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Contact from './pages/Contact'
-import About from './pages/About'
-import Course from './pages/Course'
-import Virtual from './pages/Virtual';
-import Login from './pages/Login';
-import Signup from './pages/Signup';
+import Contact from './pages/contact/Contact'
+import About from './pages/about/About'
+import Course from './pages/courses/Course'
+import Virtual from './pages/virtual_courses/Virtual';
+import Login from './pages/login/Login';
+import Signup from './pages/signup/Signup';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 const router= createBrowserRouter([
