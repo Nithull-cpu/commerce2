@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext');
+
 *{
   margin:0;
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
+  font-family: sans-serif;
 }
 /* APP.JS DESIGN */
 
@@ -378,13 +381,101 @@ button:first-child{
 }
 .swiper_parent{
   padding: 40px 0;
-  background:crimson ;
+  background:transparent;
 }
 .swiper_child{
   background: #2461e5;
-  padding: 10px 50px;
+  padding: 20px 50px;
+  text-align: center;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  text-transform: capitalize;
+  font-size: 17px;
+  color: white;
+  font-weight: normal;
 }
 
+/* LAYOUT COURSES */
 
+.layout_course{
+  background: #f1f5f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding:20px 30px;
+  border-radius: 20px;
+  margin: 10px 15px;
+}
+.layout_img img{
+  border-radius: 10px;
+  max-width:300px;
+  object-fit: contain;
+}
+.write_courses{
+  display: flex;
+  flex-direction: column;
+}
+.write_courses h3{
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.write_courses p{
+  font-size: 17px;
+  color:#020817;
+  font-weight: normal;
+  font-family:Arial, Helvetica, sans-serif;
+}
+.write_course_btn .course_btn{
+  outline: none;
+  border: 2px solid #2461e5;
+  background: #2461e5;
+  color: white;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 0;
+}
+/* COURSES */
 
+.main_course_wrapper{
+  min-height:100vh;
+  width:100vw;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 100px;
+  transition: .4s ease-in-out;
+}
+.main_course_wrapper #dark{
+  background: #020817;
+  transition: .4s ease-in-out;
+}
+.course_background{
+  width:100vw;
+  height:50vh;
+  background-image: url("./static_files/Rectangle\ 34.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.course_background h1{
+  color: white;
+  font-size: 40px;
+  font-weight: 800;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.each_course_detail{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
